@@ -107,7 +107,7 @@ class Coin {
   public randomCoin() {
     this.disposeCoin();
 
-    this.coinCoord[0] = Math.round(Coin.getRandomInt(1, 100) * 10);
+    this.coinCoord[0] = Math.round(Coin.getRandomInt(1, 52) * 10);
     this.coinCoord[1] = 30;
 
     this.drawCoin();
