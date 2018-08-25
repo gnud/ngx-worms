@@ -113,7 +113,7 @@ class Coin {
     this.drawCoin();
   }
 
-  public takeCoin() {
+  public die() {
     this.randomCoin();
   }
 
@@ -205,7 +205,7 @@ export class SceneComponent implements OnInit {
   private checkCollision() {
     
     if(this.player.checkCollision(this.coin.getPosition())) {
-      this.coin.takeCoin();
+      this.coin.die();
       this.player.grow();
     }
   }
