@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SceneComponent } from './scene/scene.component';
+import { HudComponent } from './hud/hud.component';
 
 import {
   MatAutocompleteModule,
@@ -47,6 +48,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     SceneComponent,
+    HudComponent,
   ],
   imports: [
     BrowserModule,
