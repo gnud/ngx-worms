@@ -34,51 +34,29 @@ Angular material - [docs](https://material.angular.io/)
 Canvas API -[docs](https://developer.mozilla.org/kab/docs/Web/API/Canvas_API)
 
 
-## TODO
-1. Corner turning should move the first block only, and then the other block should follow one by one
+## Demo
+visit https://gnud.github.io/ngx-worms/
 
-   Illustration:
+Demo deploy guide:
 
-    ```
-    worm normal
+1. build angular cli production build
 
-    ||
-    ||
-    ||
-    ||    
-    ||    
+```
+ng build --prod --base-href ""
+```
 
+base href must be empty so that urls will be resolved relative to the root.
+Due to Github pages doesn't allow sub directories.
 
-    Head moves to the right
-      =
-    ||
-    ||
-    ||
-    ||
+2. Publish to github pages
 
+```
+npx ngh --dir=dist/worms
+```
 
-    first tail follows
-    
-      ==
-    ||
-    ||
-    ||
-    
-    
-    next tail follows
-    
-      ===
-    ||
-    ||
+You will get something like this:
+```
+*** Successfully published!
+```
 
-
-    next tail follows
-
-      ====
-    ||
-
-  
-    worm normal
-
-      =====
-    ```
+Wait one or several minutes until github updates the content or you will get the old content.
