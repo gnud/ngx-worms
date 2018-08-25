@@ -199,7 +199,6 @@ export class SceneComponent implements OnInit {
 
     this.checkCollision();
 
-    // this.player.draw(this.player.playerX, this.player.playerY, direction);
     this.coin.repaintCoin();
   }
 
@@ -209,9 +208,5 @@ export class SceneComponent implements OnInit {
       this.coin.takeCoin();
       this.player.grow();
     }
-
-    // console.log('isCoinX, isCoinY, isCoinCaptured: ', isCoinX, isCoinY, isCoinCaptured);
-    // console.log(`isCoinX = ${this.player.playerX} == ${this.coin.coin[0]};`);
-    // console.log(`isCoinY = ${this.player.playerY} == ${this.coin.coin[1]};`);
   }
 }
